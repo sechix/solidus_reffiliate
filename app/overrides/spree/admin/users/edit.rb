@@ -12,10 +12,10 @@ Deface::Override.new(
       <td>
         <% if @user.referred? %>
           <%= link_to(@user.referred_by.email, edit_admin_user_url(@user.referred_by)) %>
-          <%= button_to('Remove', admin_referred_record_path(id: @user.referred_record), method: :delete, remote: false) %>
+          | <%= link_to('Remove', admin_referred_record_path(id: @user.referred_record), method: :delete, remote: false) %>
         <% elsif @user.affiliate? %>
           <%= link_to(@user.affiliate.name, edit_admin_affiliate_url(@user.affiliate)) %>
-          <%= button_to('Remove', admin_referred_record_path(id: @user.referred_record), method: :delete, remote: false) %>
+          | <%= link_to('Remove', admin_referred_record_path(id: @user.referred_record), method: :delete, remote: false) %>
         <% else %>
           Organic
         <% end %>

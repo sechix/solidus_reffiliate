@@ -4,6 +4,6 @@ Spree::Core::Engine.routes.draw do
 
   namespace :admin do
     resources :affiliates
-    resources :referred_records
+    resources :referred_records, only: %i[destroy]
   end
 end

@@ -27,7 +27,7 @@
   <div class="omega six columns">
     <%= f.field_container :path do %>
       <%= f.label :path, Spree.t(:path) %>
-      <%= f.text_field :path, class: 'fullwidth' %>
+      <%= f.text_field :path, class: 'fullwidth', required: true %>
       <%= f.error_message_on :path %>
     <% end %>
     <%= f.field_container :path do %>

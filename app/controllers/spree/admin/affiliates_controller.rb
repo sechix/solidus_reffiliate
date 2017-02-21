@@ -5,7 +5,11 @@ module Spree
       before_filter :layout_options, only: [:new, :edit]
 
       def index
-        @affiliates = Affiliate.all.page(params[:page]).per(Spree::Config[:admin_products_per_page])
+        @affiliates = Affiliate.order('id DESC').page(params[:page]).per(Spree::Config[:admin_products_per_page])
+      end
+
+      def location_after_save
+        edit_object_url(@object)
       end
 
       protected

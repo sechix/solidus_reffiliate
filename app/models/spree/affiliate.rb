@@ -1,8 +1,17 @@
 module Spree
   class Affiliate < Spree::Base
     has_many :referred_records
+    has_one :image, as: :viewable, dependent: :destroy, class_name: "Spree::Image"
 
     validates_presence_of :name, :path
+
+    def image=(file)
+      transaction do
+        self.image.destroy! if self.image
+        new_image = create_image(attachment: file) if file.is_a?(ActionDispatch::Http::UploadedFile)
+        super(new_image)
+      end
+    end
 
     def referred_users
       referred_records.includes(:user).collect(&:user).compact

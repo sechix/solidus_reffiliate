@@ -10,6 +10,18 @@
       <p>app/views/spree/affiliates/<%= f.text_field :partial %></p>
       <%= f.error_message_on :partial %>
     <% end %>
+
+    <% if @affiliate.image %>
+      <%= image_tag(@affiliate.image.attachment.url(:small)) %>
+    <% else %>
+      <p>No image uploaded.</p>
+    <% end %>
+
+    <%= f.field_container :image do %>
+      <%= f.label :image, "Upload image" %>
+      <%= f.file_field :image, class: 'fullwidth' %>
+      <%= f.error_message_on :image %>
+    <% end %>
   </div>
 
   <div class="omega six columns">

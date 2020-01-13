@@ -1,5 +1,5 @@
 # encoding: UTF-8
-Gem::Specification.new do |s|
+Gem::Specificatiobundln.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'solidus_reffiliate'
   s.version     = '0.0.1'

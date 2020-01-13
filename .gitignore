@@ -2,3 +2,9 @@
 .idea/workspace.xml
 .idea/inspectionProfiles/Project_Default.xml
 .idea/solidus_reffiliate.iml
+.idea/.generators
+.idea/.rakeTasks
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml

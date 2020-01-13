@@ -1,4 +1,4 @@
-class CreateSpreeReferrals < ActiveRecord::Migration::Migration[5.2]
+class CreateSpreeReferrals < ActiveRecord::Migration[5.2]
   def change
     create_table :spree_referrals do |t|
       t.string :code

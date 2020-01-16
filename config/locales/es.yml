@@ -1,0 +1,11 @@
+en:
+  spree:
+    promotion_rule_types:
+      referred_promotion_rule:
+        name: "Usuario recomendado"
+        description: "Tienes que ser un usuario recomendado"
+      affiliated_promotion_rule:
+        name: "Usuario Afiliado"
+        description: "Tienes que ser un usuario afiliado"
+    editing_affiliate: "Modificando afiliado:"
+    memo_credit: "Bonus obtenido por la recomendación de"

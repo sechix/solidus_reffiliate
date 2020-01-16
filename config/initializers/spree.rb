@@ -4,3 +4,6 @@ config.after_initialize do
   config.spree.promotions.rules << Spree::Promotion::Rules::ReferredPromotionRule
   config.spree.promotions.rules << Spree::Promotion::Rules::AffiliatedPromotionRule
 end
+
+
+SolidusReffiliate::Config[:credit_for_referal] = 5

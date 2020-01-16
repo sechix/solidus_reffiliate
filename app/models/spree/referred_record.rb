@@ -10,7 +10,7 @@ module Spree
 
     def redeem(currency)
       create_store_credit!({
-                               amount: SolidusReffiliate::Config[:credit_for_referal],
+                               amount: SolidusReffiliate::Config.credit_for_referal,
                                currency: currency,
                                memo: memo,
                                user: self.referral.user,

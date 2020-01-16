@@ -6,4 +6,4 @@ config.after_initialize do
 end
 
 
-SolidusReffiliate::Config[:credit_for_referal] = 5
+SolidusReffiliate::Config.credit_for_referal = 5

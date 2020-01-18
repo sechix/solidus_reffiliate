@@ -8,4 +8,3 @@ end
 Spree::SocialConfig.configure do |config|
   config.use_static_preferences!
 end
-Spree::SolidusReffiliate::Config.credit_for_referal = 5

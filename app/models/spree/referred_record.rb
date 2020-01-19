@@ -25,7 +25,7 @@ module Spree
     end
 
     def store_credit_category
-      Spree::StoreCreditCategory.where(name: Spree::StoreCreditCategory::REFFILIATE_CATEGORY_NAME).first
+      Spree::StoreCreditCategory.where(name: Spree::StoreCreditCategory::GIFT_CARD_CATEGORY_NAME).first
     end
 
 

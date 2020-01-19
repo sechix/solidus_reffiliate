@@ -17,6 +17,7 @@ module Spree
                                created_by: self.referral.user,
                                action_originator: self,
                                category: store_credit_category,
+                               type: Spree::StoreCreditType.find_by(name: 'Non-expiring')
                            })
     end
 
